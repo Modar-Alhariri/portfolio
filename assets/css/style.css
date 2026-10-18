@@ -8,7 +8,7 @@
   text-decoration: none;
   outline: none;
   border: none;
-  text-transform: capitalize;
+  /* text-transform: capitalize; */
   transition: all 0.2s linear;
 }
 html {
@@ -22,7 +22,7 @@ body {
 }
 
 *::selection {
-  background: #2b3dda;
+  background: #00ae1a;
   color: #fff;
 }
 
@@ -37,7 +37,7 @@ html::-webkit-scrollbar-track {
   background: rgb(235, 202, 245);
 }
 html::-webkit-scrollbar-thumb {
-  background: #420177;
+  background: #00af38;
 }
 
 /* pre loader start */
@@ -96,7 +96,7 @@ header .logo i {
   font-size: 2.2rem;
 }
 header .logo:hover {
-  color: #fc8c05;
+  color: #FE7F2D;
 }
 header .navbar ul {
   list-style: none;
@@ -109,7 +109,7 @@ header .navbar li {
 }
 header .navbar ul li a {
   font-size: 1.57rem;
-  color: #0e2431;
+  color: #000000;
   font-weight: 600;
   text-decoration: none;
   letter-spacing: 0.04rem;
@@ -117,8 +117,8 @@ header .navbar ul li a {
 }
 header .navbar ul li a.active,
 header .navbar ul li a:hover {
-  color: #011aff;
-  border-bottom: 0.2rem solid #011aff;
+  color: #FE7F2D;
+  border-bottom: 0.2rem solid #FE7F2D;
   padding: 0.5rem 0;
 }
 /* navbar ends */
@@ -127,7 +127,7 @@ header .navbar ul li a:hover {
 #menu {
   font-size: 3rem;
   cursor: pointer;
-  color: rgb(24, 2, 63);
+  color: rgb(23, 63, 2);
   display: none;
 }
 @media (max-width: 768px) {
@@ -167,7 +167,7 @@ header .navbar ul li a:hover {
     padding: 1rem;
     color: #fff;
     border-radius: 0.5rem;
-    border-bottom: 0.5rem solid #011aff;
+    border-bottom: 0.5rem solid #6D0808;
   }
   .fa-times {
     transform: rotate(180deg);
@@ -239,7 +239,7 @@ header .navbar ul li a:hover {
 }
 .home .content p span {
   font-size: 2.5rem;
-  color: rgb(148, 8, 8);
+  color: #FE7F2D;
   font-weight: 600;
   padding: 1rem 0;
 }
@@ -251,8 +251,8 @@ header .navbar ul li a:hover {
   border-radius: 4em;
   transition: 0.5s;
   color: #fff;
-  background: #2506ad;
-  box-shadow: 0px 5px 18px rgba(48, 68, 247, 0.6);
+  background: #FE7F2D;
+  box-shadow: 0px 5px 18px #233D4D;
   font-family: "Nunito", sans-serif;
 }
 .home .btn span {
@@ -382,7 +382,7 @@ header .navbar ul li a:hover {
 }
 .about .row .content .tag {
   font-size: 1.4rem;
-  color: #020133;
+  color: #FE7F2D;
   font-weight: 600;
   margin-top: 1rem;
 }
@@ -404,7 +404,7 @@ header .navbar ul li a:hover {
   text-transform: none;
 }
 .about .row .content .box-container .box p span {
-  color: #011aff;
+  color: #FE7F2D;
 }
 .resumebtn {
   margin-top: 6rem;
@@ -414,7 +414,7 @@ header .navbar ul li a:hover {
   border-radius: 0.5em;
   transition: 0.3s;
   color: #fff;
-  background: #2506ad;
+  background: #FE7F2D;
   box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
   font-family: "Nunito", sans-serif;
 }
@@ -461,13 +461,13 @@ header .navbar ul li a:hover {
 /* skills section starts */
 .skills {
   min-height: 90vh;
-  background: linear-gradient(to bottom, #57059e, #4a00e0);
+  background: linear-gradient(to bottom, #233D4D, #FE7F2D);
 }
 .skills h2 {
   color: #fff;
 }
 .skills .heading span {
-  color: rgb(255, 230, 0);
+  color: #FE7F2D;
 }
 .skills .container {
   background: rgba(0, 0, 22, 0.4);
@@ -480,7 +480,7 @@ header .navbar ul li a:hover {
 }
 .skills .container .row {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   flex-wrap: wrap;
   gap: 1.8rem;
 }
@@ -588,7 +588,7 @@ header .navbar ul li a:hover {
 }
 .education .box-container .box .content h3 {
   font-size: 2.5rem;
-  color: #012970;
+  color: #FE7F2D;
   padding: 0.5rem 0;
   font-weight: 600;
   text-align: left;
@@ -601,7 +601,7 @@ header .navbar ul li a:hover {
 }
 .education h4 {
   font-size: 2rem;
-  color: rgb(34, 109, 0);
+  color: #233D4D;
   text-align: left;
   margin: 1rem;
   font-family: "Nunito", sans-serif;
@@ -649,7 +649,7 @@ header .navbar ul li a:hover {
   padding: 1rem;
 }
 .work .heading span {
-  color: rgb(255, 230, 0);
+  color: #FE7F2D;
 }
 .work .box-container {
   display: flex;
@@ -663,7 +663,7 @@ header .navbar ul li a:hover {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   position: relative;
   overflow: hidden;
-  height: 30rem;
+  height: 40rem;
 }
 .work .box-container .box img {
   height: 100%;
@@ -688,7 +688,8 @@ header .navbar ul li a:hover {
   height: 4.5rem;
   width: 100%;
   padding-left: 1rem;
-  background: #ffd900;
+  background: #FE7F2D;
+  color: #EAECF0;
 }
 .work .box-container .box .content .tag h3 {
   font-size: 2rem;
@@ -1002,11 +1003,11 @@ form .message textarea {
 .field input:focus,
 .message textarea:focus {
   padding-left: 47px;
-  border: 2px solid rgb(115, 3, 167);
+  border: 2px solid #FE7F2D;
 }
 .field input:focus ~ i,
 .message textarea:focus ~ i {
-  color: rgb(115, 3, 167);
+  color: #FE7F2D;
 }
 form .message {
   position: relative;
@@ -1041,7 +1042,7 @@ form .button-area {
   cursor: pointer;
   border-radius: 5px;
   padding: 13px 25px;
-  background: #2506ad;
+  background: #FE7F2D;
   box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
   transition: 0.3s ease;
   font-family: "Nunito", sans-serif;
@@ -1116,7 +1117,7 @@ form .button-area {
 }
 .footer .box-container .box p i {
   padding-right: 1rem;
-  color: #ffae00;
+  color: #FE7F2D;
 }
 .footer .box-container .box a {
   font-size: 1.5rem;
@@ -1125,7 +1126,7 @@ form .button-area {
   display: block;
 }
 .footer .box-container .box a:hover {
-  color: #ffae00;
+  color: #FE7F2D;
 }
 .footer .box-container .box .share {
   display: flex;
@@ -1213,7 +1214,7 @@ form .button-area {
   right: 2rem;
   padding: 1rem 1.5rem;
   font-size: 2rem;
-  background: #ffae00;
+  background: #FE7F2D;
   color: rgb(13, 0, 44);
   border-radius: 50%;
   transition: 1s linear;
@@ -1223,3 +1224,21 @@ form .button-area {
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+/* *************************************** */
+.technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 15px 0;
+}
+
+.tech {
+    display: inline-block;
+    padding: 6px 12px;
+    font-size: 1.3rem;
+    border-radius: 20px;
+    background: #001e53;
+    color: #fcfdff;
+    border: 1px solid #c7d9f8;
+    font-weight: 500;
+}
