@@ -8,7 +8,6 @@
   text-decoration: none;
   outline: none;
   border: none;
-  /* text-transform: capitalize; */
   transition: all 0.2s linear;
 }
 html {
@@ -17,13 +16,14 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  background: #f7f7f7;
+  background: #090d16; /* خلفية داكنة عميقة جداً لزيادة التباين */
+  color: #ffffff; /* نص أبيض ناصع وواضح تماماً */
   font-family: "Poppins", sans-serif;
 }
 
 *::selection {
-  background: #00ae1a;
-  color: #fff;
+  background: #01e127;
+  color: #090d16;
 }
 
 html {
@@ -34,10 +34,11 @@ html::-webkit-scrollbar {
   width: 0.8rem;
 }
 html::-webkit-scrollbar-track {
-  background: rgb(235, 202, 245);
+  background: #090d16;
 }
 html::-webkit-scrollbar-thumb {
-  background: #00af38;
+  background: #01e127;
+  border-radius: 4px;
 }
 
 /* pre loader start */
@@ -46,7 +47,7 @@ html::-webkit-scrollbar-thumb {
   top: 0;
   left: 0;
   z-index: 10000;
-  background: #e6eff1;
+  background: #090d16;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -70,8 +71,9 @@ header {
   justify-content: space-between;
   padding: 1.7rem 10%;
   height: 6.5rem;
-  background-color: #fff;
-  box-shadow: 0 1px 4px rgba(146, 161, 176, 0.3);
+  background-color: #111827;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.6);
+  border-bottom: 1px solid #1f293d;
 }
 section {
   min-height: 100vh;
@@ -79,24 +81,25 @@ section {
 }
 .heading {
   font-size: 3.5rem;
-  color: rgb(32, 32, 32);
+  color: #ffffff;
   font-weight: 800;
   text-align: center;
 }
 .heading span {
-  color: rgb(115, 3, 167);
+  color: #01e127;
 }
 header .logo {
   font-size: 1.9rem;
   font-weight: 800;
   text-decoration: none;
-  color: #0e2431;
+  color: #ffffff;
 }
 header .logo i {
   font-size: 2.2rem;
+  color: #01e127;
 }
 header .logo:hover {
-  color: #FE7F2D;
+  color: #01e127;
 }
 header .navbar ul {
   list-style: none;
@@ -109,7 +112,7 @@ header .navbar li {
 }
 header .navbar ul li a {
   font-size: 1.57rem;
-  color: #000000;
+  color: #ffffff; /* نص أبيض واضح في القائمة */
   font-weight: 600;
   text-decoration: none;
   letter-spacing: 0.04rem;
@@ -117,8 +120,8 @@ header .navbar ul li a {
 }
 header .navbar ul li a.active,
 header .navbar ul li a:hover {
-  color: #FE7F2D;
-  border-bottom: 0.2rem solid #FE7F2D;
+  color: #01e127;
+  border-bottom: 0.2rem solid #01e127;
   padding: 0.5rem 0;
 }
 /* navbar ends */
@@ -127,7 +130,7 @@ header .navbar ul li a:hover {
 #menu {
   font-size: 3rem;
   cursor: pointer;
-  color: rgb(23, 63, 2);
+  color: #01e127;
   display: none;
 }
 @media (max-width: 768px) {
@@ -142,7 +145,8 @@ header .navbar ul li a:hover {
     height: 100%;
     text-align: left;
     align-items: flex-start;
-    background-color: #0e0f31;
+    background-color: #111827;
+    border-left: 1px solid #1f293d;
   }
   header .navbar ul {
     flex-flow: column;
@@ -159,15 +163,15 @@ header .navbar ul li a:hover {
     display: block;
     padding: 1rem;
     text-align: left;
-    color: #fff;
+    color: #ffffff;
     font-size: 2rem;
   }
   header .navbar ul li a.active,
   header .navbar ul li a:hover {
     padding: 1rem;
-    color: #fff;
+    color: #01e127;
     border-radius: 0.5rem;
-    border-bottom: 0.5rem solid #6D0808;
+    border-bottom: 0.5rem solid #01e127;
   }
   .fa-times {
     transform: rotate(180deg);
@@ -186,6 +190,7 @@ header .navbar ul li a:hover {
   gap: 1.5rem;
   min-height: 100vh;
   align-items: center;
+  background: #090d16;
 }
 .home #particles-js {
   position: absolute;
@@ -215,31 +220,32 @@ header .navbar ul li a:hover {
   width: 70%;
   margin-left: 6rem;
   border-radius: 50%;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 25px rgba(0, 216, 255, 0.3);
   cursor: pointer;
+  border: 3px solid #01e127;
 }
 .home .image img:hover {
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 35px rgba(0, 216, 255, 0.5);
 }
 .home .content h2 {
   font-size: 5rem;
   font-weight: 800;
-  color: #002057;
+  color: #ffffff;
 }
 .home .content h2 span {
   font-size: 5rem;
   font-weight: 800;
-  color: #ff7b00;
+  color: #01e127;
 }
 .home .content p {
   font-size: 2.5rem;
-  color: #000;
+  color: #e2e8f0; /* نص عالي الوضوح للفقرة الترحيبية */
   font-weight: 600;
   padding: 1rem 0;
 }
 .home .content p span {
   font-size: 2.5rem;
-  color: #FE7F2D;
+  color: #01e127;
   font-weight: 600;
   padding: 1rem 0;
 }
@@ -250,10 +256,11 @@ header .navbar ul li a:hover {
   padding: 1.6rem 3rem;
   border-radius: 4em;
   transition: 0.5s;
-  color: #fff;
-  background: #FE7F2D;
-  box-shadow: 0px 5px 18px #233D4D;
+  color: #090d16;
+  background: #01e127;
+  box-shadow: 0px 4px 20px rgba(0, 216, 255, 0.4);
   font-family: "Nunito", sans-serif;
+  font-weight: 700;
 }
 .home .btn span {
   font-weight: 700;
@@ -266,7 +273,9 @@ header .navbar ul li a:hover {
   transition: 0.3s;
 }
 .home .btn:hover {
-  background: #1a047e;
+  background: #ffffff;
+  color: #090d16;
+  box-shadow: 0px 6px 25px rgba(255, 255, 255, 0.5);
 }
 .home .btn:hover i {
   transform: translateX(5px);
@@ -289,37 +298,43 @@ header .navbar ul li a:hover {
   font-size: 2rem;
   display: inline-block;
   line-height: 44px;
-  color: #00d9ff;
-  background-color: #09011b;
+  color: #01e127;
+  background-color: #111827;
   width: 44px;
   height: 44px;
   text-align: center;
   margin-right: 8px;
   border-radius: 100%;
-  -webkit-transition: all 0.2s linear;
-  -o-transition: all 0.2s linear;
+  border: 1px solid #1f293d;
   transition: all 0.2s linear;
 }
 .social-icons a:active,
 .social-icons a:focus,
 .social-icons a:hover {
-  color: #fff;
-  background-color: #0685da;
+  color: #090d16;
+  background-color: #01e127;
+  border-color: #01e127;
+  box-shadow: 0 0 12px rgba(0, 216, 255, 0.5);
 }
 .social-icons a.github:hover {
-  background-color: #0e0e0e;
+  background-color: #ffffff;
+  color: #090d16;
 }
 .social-icons a.twitter:hover {
   background-color: #00aced;
+  color: #fff;
 }
 .social-icons a.linkedin:hover {
   background-color: #007bb6;
+  color: #fff;
 }
 .social-icons a.dev:hover {
-  background-color: #070707;
+  background-color: #ffffff;
+  color: #090d16;
 }
 .social-icons a.instagram:hover {
   background-color: #ee00da;
+  color: #fff;
 }
 /* social icons end */
 
@@ -346,7 +361,7 @@ header .navbar ul li a:hover {
 
 /* about section starts */
 .about {
-  background: rgb(255, 255, 255);
+  background: #111827;
 }
 .about .row {
   display: flex;
@@ -364,25 +379,28 @@ header .navbar ul li a:hover {
   width: 30rem;
   height: auto;
   border-radius: 5%;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.7);
   mix-blend-mode: luminosity;
   transition: 0.3s;
   cursor: pointer;
+  border: 1px solid #1f293d;
 }
 .about .row .image img:hover {
   mix-blend-mode: normal;
+  border-color: #01e127;
+  box-shadow: 0 0 20px rgba(0, 216, 255, 0.4);
 }
 .about .row .content {
   flex: 1 1 45rem;
   padding: 3rem;
 }
 .about .row .content h3 {
-  color: rgb(27, 27, 27);
+  color: #ffffff;
   font-size: 2.5rem;
 }
 .about .row .content .tag {
   font-size: 1.4rem;
-  color: #FE7F2D;
+  color: #01e127;
   font-weight: 600;
   margin-top: 1rem;
 }
@@ -392,6 +410,7 @@ header .navbar ul li a:hover {
   font-family: "Nunito";
   font-weight: 600;
   text-transform: none;
+  color: #e2e8f0; /* لون نص واضح جداً داخل قسم نبذة عني */
 }
 .about .row .content .box-container {
   display: flex;
@@ -402,9 +421,10 @@ header .navbar ul li a:hover {
 }
 .about .row .content .box-container .box p {
   text-transform: none;
+  color: #ffffff;
 }
 .about .row .content .box-container .box p span {
-  color: #FE7F2D;
+  color: #01e127;
 }
 .resumebtn {
   margin-top: 6rem;
@@ -413,13 +433,14 @@ header .navbar ul li a:hover {
   padding: 1.7rem 3rem;
   border-radius: 0.5em;
   transition: 0.3s;
-  color: #fff;
-  background: #FE7F2D;
-  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  color: #090d16;
+  background: #01e127;
+  box-shadow: 0px 4px 15px rgba(0, 216, 255, 0.4);
   font-family: "Nunito", sans-serif;
+  font-weight: 700;
 }
 .resumebtn .btn span {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.8rem;
   letter-spacing: 0.1rem;
 }
@@ -429,7 +450,9 @@ header .navbar ul li a:hover {
   transition: 0.3s;
 }
 .resumebtn .btn:hover {
-  background: #1a047e;
+  background: #ffffff;
+  color: #090d16;
+  box-shadow: 0px 6px 20px rgba(255, 255, 255, 0.4);
 }
 .resumebtn .btn:hover i {
   transform: translateX(5px);
@@ -461,22 +484,23 @@ header .navbar ul li a:hover {
 /* skills section starts */
 .skills {
   min-height: 90vh;
-  background: linear-gradient(to bottom, #233D4D, #FE7F2D);
+  background: linear-gradient(to bottom, #090d16, #111827);
 }
 .skills h2 {
   color: #fff;
 }
 .skills .heading span {
-  color: #FE7F2D;
+  color: #01e127;
 }
 .skills .container {
-  background: rgba(0, 0, 22, 0.4);
+  background: rgba(17, 24, 39, 0.9);
   color: #fff;
   border-radius: 1rem;
   padding: 2rem;
   width: 90%;
   margin: auto;
   margin-top: 2rem;
+  border: 1px solid #1f293d;
 }
 .skills .container .row {
   display: grid;
@@ -488,13 +512,15 @@ header .navbar ul li a:hover {
   margin-bottom: 15px;
   padding: 10px;
   border-radius: 1rem;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  background: rgba(0, 0, 22, 0.9);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+  background: #090d16;
+  border: 1px solid #1f293d;
   transition: 0.2s;
 }
 .skills .container .bar:hover {
-  box-shadow: 0 8px 10px rgba(0, 2, 68, 0.8) !important;
-  background-color: rgba(0, 0, 0, 0.9) !important;
+  box-shadow: 0 0 18px rgba(0, 216, 255, 0.3) !important;
+  border-color: #01e127 !important;
+  background-color: #111827 !important;
 }
 .skills .container .bar .info {
   display: flex;
@@ -505,12 +531,14 @@ header .navbar ul li a:hover {
 }
 .skills .container .bar .info i {
   font-size: 4rem;
+  color: #01e127;
 }
 .skills .container .bar .info span {
   font-size: 2rem;
   font-weight: 500;
   font-family: "Poppins";
   margin-left: 0.5rem;
+  color: #ffffff; /* اسم المهارة أبيض واضح تماماً */
 }
 /* skills media queries starts*/
 @media screen and (max-width: 600px) {
@@ -534,7 +562,7 @@ header .navbar ul li a:hover {
 
 /* education section starts */
 .education {
-  background: #e5ecfb;
+  background: #090d16;
   min-height: 80vh;
 }
 .education .qoute {
@@ -543,6 +571,7 @@ header .navbar ul li a:hover {
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   margin-top: 0.5rem;
+  color: #cbd5e1;
 }
 .education .box-container {
   display: flex;
@@ -556,17 +585,19 @@ header .navbar ul li a:hover {
   flex-direction: row;
   width: 80%;
   border-radius: 0.5rem;
-  box-shadow: 0.2rem 0.5rem 1rem rgba(0, 0, 0, 0.2);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   text-align: center;
   position: relative;
   margin-top: 2rem;
   overflow: hidden;
   transition: 0.3s;
-  background: rgb(252, 252, 252);
+  background: #111827;
+  border: 1px solid #1f293d;
 }
 .education .box-container .box:hover {
-  transform: scale(1.03);
-  box-shadow: 1rem 0.5rem 1.2rem rgba(0, 0, 0, 0.3);
+  transform: scale(1.02);
+  box-shadow: 0 0 20px rgba(0, 216, 255, 0.3);
+  border-color: #01e127;
 }
 .education .box-container .box .image {
   flex: 1 1 20rem;
@@ -588,7 +619,7 @@ header .navbar ul li a:hover {
 }
 .education .box-container .box .content h3 {
   font-size: 2.5rem;
-  color: #FE7F2D;
+  color: #01e127;
   padding: 0.5rem 0;
   font-weight: 600;
   text-align: left;
@@ -598,10 +629,11 @@ header .navbar ul li a:hover {
   font-size: 1.5rem;
   margin-left: 1rem;
   text-align: left;
+  color: #e2e8f0; /* نص واضح جداً لوصف التعليم */
 }
 .education h4 {
   font-size: 2rem;
-  color: #233D4D;
+  color: #ffffff;
   text-align: left;
   margin: 1rem;
   font-family: "Nunito", sans-serif;
@@ -641,15 +673,14 @@ header .navbar ul li a:hover {
 
 /* work section starts */
 .work {
-  /* background: #010124; */
-  background: linear-gradient(to bottom, #000031, #00002c);
+  background: linear-gradient(to bottom, #090d16, #111827);
 }
 .work h2 {
   color: #fff;
   padding: 1rem;
 }
 .work .heading span {
-  color: #FE7F2D;
+  color: #01e127;
 }
 .work .box-container {
   display: flex;
@@ -660,10 +691,11 @@ header .navbar ul li a:hover {
 .work .box-container .box {
   flex: 1 1 30rem;
   border-radius: 0.5rem;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
   position: relative;
   overflow: hidden;
   height: 40rem;
+  border: 1px solid #1f293d;
 }
 .work .box-container .box img {
   height: 100%;
@@ -676,9 +708,10 @@ header .navbar ul li a:hover {
   position: absolute;
   top: 85%;
   left: 0;
-  background: rgba(255, 255, 255, 0.9);
+  background: rgba(17, 24, 39, 0.96);
   display: flex;
   flex-direction: column;
+  border-top: 1px solid #1f293d;
 }
 .work .box-container .box .content .tag {
   display: flex;
@@ -688,11 +721,12 @@ header .navbar ul li a:hover {
   height: 4.5rem;
   width: 100%;
   padding-left: 1rem;
-  background: #FE7F2D;
-  color: #EAECF0;
+  background: #01e127;
+  color: #090d16;
 }
 .work .box-container .box .content .tag h3 {
   font-size: 2rem;
+  font-weight: 700;
 }
 .work .box-container .box:hover .content {
   top: 25%;
@@ -705,6 +739,7 @@ header .navbar ul li a:hover {
 }
 .work .desc p {
   font-size: 1.5rem;
+  color: #e2e8f0; /* نص وصف المشروع واضح تماماً */
 }
 .work .desc .btns {
   display: flex;
@@ -718,12 +753,13 @@ header .navbar ul li a:hover {
   padding: 1.5rem 2.5rem;
   border-radius: 0.5rem;
   font-size: 1.5rem;
-  color: #fff;
-  background: rgb(12, 12, 12);
+  color: #090d16;
+  background: #01e127;
+  font-weight: 600;
   margin-right: 2rem;
 }
 .work .desc .btns .btn:hover {
-  background: #310ae0f5;
+  background: #ffffff;
 }
 .work .viewall {
   display: flex;
@@ -735,11 +771,12 @@ header .navbar ul li a:hover {
   padding: 1.6rem 3rem;
   border-radius: 0.5em;
   transition: 0.5s;
-  color: rgb(255, 255, 255);
+  color: #01e127;
   font-weight: 700;
-  border: 2px solid #fff;
-  box-shadow: 0px 5px 10px rgba(65, 84, 241, 0.4);
+  border: 2px solid #01e127;
+  box-shadow: 0 0 15px rgba(0, 216, 255, 0.25);
   text-align: center;
+  background: transparent;
 }
 .work .viewall .btn span {
   font-weight: 600;
@@ -752,8 +789,8 @@ header .navbar ul li a:hover {
   transition: 0.3s;
 }
 .work .viewall .btn:hover {
-  background: #fff;
-  color: #000;
+  background: #01e127;
+  color: #090d16;
 }
 .work .viewall .btn:hover i {
   transform: translateX(5px);
@@ -770,7 +807,7 @@ header .navbar ul li a:hover {
   content: "";
   position: absolute;
   width: 6px;
-  background: #020133;
+  background: #1f293d;
   top: 0;
   bottom: 0;
   left: 50%;
@@ -790,15 +827,15 @@ header .navbar ul li a:hover {
   width: 25px;
   height: 25px;
   right: -17px;
-  background-color: rgb(255, 255, 255);
-  border: 4px solid #ff9f55;
+  background-color: #111827;
+  border: 4px solid #01e127;
   top: 15px;
   border-radius: 50%;
   z-index: 100;
-  font-size: 1.89rem;
+  font-size: 1.4rem;
   text-align: center;
   font-weight: 600;
-  color: #02094b;
+  color: #01e127;
   font-family: "Font Awesome\ 5 Free";
 }
 .experience .left {
@@ -816,9 +853,9 @@ header .navbar ul li a:hover {
   width: 0;
   z-index: 1;
   right: 30px;
-  border: medium solid #f68c09;
+  border: medium solid #1f293d;
   border-width: 10px 0 10px 10px;
-  border-color: transparent transparent transparent #f68c09;
+  border-color: transparent transparent transparent #1f293d;
 }
 /* arrows pointing left  */
 .experience .right::before {
@@ -829,33 +866,39 @@ header .navbar ul li a:hover {
   width: 0;
   z-index: 1;
   left: 30px;
-  border: medium solid #f68c09;
+  border: medium solid #1f293d;
   border-width: 10px 10px 10px 0;
-  border-color: transparent #f68c09 transparent transparent;
+  border-color: transparent #1f293d transparent transparent;
 }
 .experience .right::after {
   left: -16px;
 }
 .experience .content {
-  background-color: #f68c09;
+  background-color: #111827;
   position: relative;
   border-radius: 6px;
+  border: 1px solid #1f293d;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 .experience .content .tag {
   font-size: 1.3rem;
   padding-top: 1.5rem;
   padding-left: 1.5rem;
+  color: #01e127;
+  font-weight: 600;
 }
 .experience .content .desc {
   margin-left: 1.5rem;
   padding-bottom: 1rem;
 }
 .experience .content .desc h3 {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 600;
+  color: #ffffff; /* عنوان الخبرة أبيض ناصع */
 }
 .experience .content .desc p {
-  font-size: 1.2rem;
+  font-size: 1.3rem;
+  color: #e2e8f0; /* وصف الخبرة واضح تماماً */
 }
 /* view all button */
 .morebtn {
@@ -868,13 +911,14 @@ header .navbar ul li a:hover {
   padding: 1.6rem 3rem;
   border-radius: 0.5em;
   transition: 0.5s;
-  color: #fff;
-  background: #2506ad;
-  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  color: #090d16;
+  background: #01e127;
+  box-shadow: 0 0 15px rgba(0, 216, 255, 0.3);
   text-align: center;
+  font-weight: 700;
 }
 .morebtn .btn span {
-  font-weight: 600;
+  font-weight: 700;
   font-size: 1.7rem;
   font-family: "Nunito", sans-serif;
 }
@@ -884,7 +928,9 @@ header .navbar ul li a:hover {
   transition: 0.3s;
 }
 .morebtn .btn:hover {
-  background: #1a047e;
+  background: #ffffff;
+  color: #090d16;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
 }
 .morebtn .btn:hover i {
   transform: translateX(5px);
@@ -907,13 +953,13 @@ header .navbar ul li a:hover {
     padding-right: 2rem;
   }
   .experience .container::after {
-    font-size: 2.2rem;
+    font-size: 1.4rem;
   }
   .experience .container::before {
     left: 61px;
-    border: medium solid #f68c09;
+    border: medium solid #1f293d;
     border-width: 10px 10px 10px 0;
-    border-color: transparent #f68c09 transparent transparent;
+    border-color: transparent #1f293d transparent transparent;
   }
   .experience .left::after {
     left: 15px;
@@ -933,16 +979,17 @@ header .navbar ul li a:hover {
 
 /* contact section starts */
 .contact {
-  background: #e5ecfb;
+  background: #090d16;
   min-height: 60vh;
 }
 .contact .container {
   max-width: 1050px;
   width: 100%;
-  background: #fff;
+  background: #111827;
   border-radius: 1.5rem;
-  margin: 2rem 5rem;
-  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+  margin: 2rem auto;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.6);
+  border: 1px solid #1f293d;
 }
 .contact .container .content {
   display: flex;
@@ -958,6 +1005,7 @@ header .navbar ul li a:hover {
   width: 100%;
   height: 40rem;
   position: relative;
+  filter: brightness(0.95);
 }
 .contact .content form {
   width: 45%;
@@ -979,7 +1027,7 @@ form i {
   position: absolute;
   top: 50%;
   left: 18px;
-  color: rgb(51, 51, 51);
+  color: #cbd5e1; /* أيقونات الفورم واضحة تماماً */
   font-size: 17px;
   pointer-events: none;
   transform: translateY(-50%);
@@ -993,21 +1041,22 @@ form .message textarea {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   border-radius: 5px;
-  border: 1px solid rgb(51, 51, 51);
-  background: #e5ecfb;
+  border: 1px solid #1f293d;
+  background: #090d16;
+  color: #ffffff; /* نص المدخلات أبيض واضح */
 }
 .field input::placeholder,
 .message textarea::placeholder {
-  color: rgb(51, 51, 51);
+  color: #94a3b8; /* لون الـ placeholder واضح ومقروء */
 }
 .field input:focus,
 .message textarea:focus {
   padding-left: 47px;
-  border: 2px solid #FE7F2D;
+  border: 2px solid #01e127;
 }
 .field input:focus ~ i,
 .message textarea:focus ~ i {
-  color: #FE7F2D;
+  color: #01e127;
 }
 form .message {
   position: relative;
@@ -1035,20 +1084,23 @@ form .button-area {
   flex-direction: row-reverse;
 }
 .button-area button {
-  color: #fff;
+  color: #090d16;
   border: none;
   outline: none;
   font-size: 1.8rem;
   cursor: pointer;
   border-radius: 5px;
   padding: 13px 25px;
-  background: #FE7F2D;
-  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  background: #01e127;
+  box-shadow: 0 0 12px rgba(0, 216, 255, 0.4);
   transition: 0.3s ease;
   font-family: "Nunito", sans-serif;
+  font-weight: 700;
 }
 .button-area button:hover {
-  background: #421cecf5;
+  background: #ffffff;
+  color: #090d16;
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.5);
 }
 .button-area span {
   font-size: 17px;
@@ -1061,7 +1113,7 @@ form .button-area {
   left: 2px;
   font-size: 1.5rem;
   transition: 0.3s;
-  color: #fff;
+  color: #090d16;
 }
 .button-area button:hover i {
   left: 8px;
@@ -1092,7 +1144,7 @@ form .button-area {
 .footer {
   min-height: auto;
   padding-top: 0;
-  background: rgb(0, 1, 43);
+  background: #05080e;
 }
 .footer .box-container {
   display: flex;
@@ -1105,28 +1157,28 @@ form .button-area {
 }
 .footer .box-container .box h3 {
   font-size: 2.5rem;
-  color: #fff;
+  color: #ffffff;
   padding-bottom: 1rem;
   font-weight: normal;
 }
 .footer .box-container .box p {
   font-size: 1.5rem;
-  color: #ccc;
+  color: #cbd5e1; /* النصوص في الفوتر واضحة جداً */
   padding: 0.7rem 0;
   text-transform: none;
 }
 .footer .box-container .box p i {
   padding-right: 1rem;
-  color: #FE7F2D;
+  color: #01e127;
 }
 .footer .box-container .box a {
   font-size: 1.5rem;
-  color: rgb(238, 238, 238);
+  color: #e2e8f0;
   padding: 0.3rem 0;
   display: block;
 }
 .footer .box-container .box a:hover {
-  color: #FE7F2D;
+  color: #01e127;
 }
 .footer .box-container .box .share {
   display: flex;
@@ -1142,15 +1194,16 @@ form .button-area {
   font-size: 1.7rem;
   margin-right: 1rem;
   transition: 0.2s;
-  background: rgb(230, 230, 230);
-  color: #02094b;
-  border: none;
+  background: #111827;
+  color: #01e127;
+  border: 1px solid #1f293d;
 }
 .footer .box-container .box .share a:hover {
-  background: transparent;
+  background: #01e127;
   transform: scale(0.98);
-  border: 0.1rem solid rgb(180, 178, 178);
-  color: #ffae00;
+  border-color: #01e127;
+  color: #090d16;
+  box-shadow: 0 0 12px rgba(0, 216, 255, 0.4);
 }
 .footer .credit {
   padding: 1rem 0 0 0;
@@ -1158,14 +1211,14 @@ form .button-area {
   font-size: 1.5rem;
   font-family: "Nunito", sans-serif;
   font-weight: 600;
-  color: #fff;
-  border-top: 0.1rem solid #fff3;
+  color: #cbd5e1;
+  border-top: 0.1rem solid #1f293d;
 }
 .footer .credit a {
-  color: #ffae00;
+  color: #01e127;
 }
 .footer .fa {
-  color: #e90606;
+  color: #f87171;
   margin: 0 0.3rem;
   font-size: 1.5rem;
   animation: pound 0.35s infinite alternate;
@@ -1214,11 +1267,12 @@ form .button-area {
   right: 2rem;
   padding: 1rem 1.5rem;
   font-size: 2rem;
-  background: #FE7F2D;
-  color: rgb(13, 0, 44);
+  background: #01e127;
+  color: #090d16;
   border-radius: 50%;
   transition: 1s linear;
   z-index: 1000;
+  box-shadow: 0 0 15px rgba(0, 216, 255, 0.4);
 }
 #scroll-top.active {
   top: calc(100% - 12rem);
@@ -1237,8 +1291,8 @@ form .button-area {
     padding: 6px 12px;
     font-size: 1.3rem;
     border-radius: 20px;
-    background: #001e53;
-    color: #fcfdff;
-    border: 1px solid #c7d9f8;
+    background: #111827;
+    color: #01e127;
+    border: 1px solid #1f293d;
     font-weight: 500;
 }
